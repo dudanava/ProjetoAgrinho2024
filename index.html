@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo para a Cidade, Colhendo Oportunidades</title>
+    <style>
+        /* Estilos CSS */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            cursor: pointer; /* Adicionando cursor pointer para indicar que é clicável */
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Estilos adicionais para o novo texto */
+        #passosHorta {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #777;
+        }
+        /* Estilo para redimensionar a imagem */
+        img {
+            max-width: 100%; /* Define a largura máxima da imagem como 100% do seu contêiner pai */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove espaços em branco indesejados ao redor da imagem */
+            margin: 20px auto; /* Adiciona margens acima e abaixo da imagem e centraliza horizontalmente */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Do Campo para a Cidade</h1>
+        <h2>Colhendo Oportunidades</h2>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h3>Conectando o Rural ao Urbano</h3>
+            <p>Conectar o rural ao urbano é essencial para promover um desenvolvimento sustentável e equitativo nas sociedades modernas. Essa conexão não se limita apenas à infraestrutura física, mas também à integração econômica e social entre áreas urbanas e rurais. Através de políticas eficazes de planejamento territorial e investimentos estratégicos em transporte e telecomunicações, é possível reduzir disparidades regionais, melhorar o acesso a serviços básicos como saúde e educação, e criar oportunidades econômicas para todos os cidadãos, independentemente de onde residam.
+            </p>
+            <p>Além disso, conectar o rural ao urbano facilita a troca de conhecimentos e práticas entre diferentes comunidades, promovendo a inovação e a sustentabilidade. As áreas rurais frequentemente possuem recursos naturais valiosos e conhecimentos tradicionais que podem beneficiar as áreas urbanas em termos de segurança alimentar, conservação ambiental e adaptação às mudanças climáticas. Por outro lado, a urbanização planejada pode oferecer mercados mais amplos para produtos agrícolas e rurais, incentivando práticas agrícolas sustentáveis ​​e aumentando a renda das populações rurais. Assim, conectar esses dois mundos não apenas fortalece a economia nacional, mas também promove um desenvolvimento mais inclusivo e resiliente para toda a sociedade.
+            </p>
+            <button class="button" onclick="mostrarPassos()">Passo a Passo para uma Horta Compacta</button>
+            <img src="fazendinha.png" alt="Imagem de exemplo">
+            <div id="passosHorta"></div> <!-- Div para mostrar os passos da horta compacta -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Do Campo para a Cidade. Já podi si mata?</p>
+    </footer>
+
+    <script>
+        function mostrarPassos() {
+            var passosHorta = document.getElementById('passosHorta');
+            passosHorta.innerHTML = `
+                <h3>Passo a Passo para uma Horta Compacta</h3>
+                <p><strong>Passo 1: Escolha do Local</strong><br>
+                Escolha um local que receba pelo menos 4-6 horas de sol direto por dia. Pode ser uma varanda, terraço, jardim pequeno ou até mesmo uma janela ensolarada.</p>
+
+                <p><strong>Passo 2: Escolha dos Recipientes</strong><br>
+                Você pode usar vasos, caixotes, garrafas plásticas cortadas, jardineiras ou qualquer recipiente que seja espaçoso o suficiente para as plantas crescerem e tenha furos de drenagem no fundo para evitar o acúmulo de água.</p>
+
+                <p><strong>Passo 3: Preparação do Solo</strong><br>
+                Use uma mistura de terra vegetal com composto orgânico para garantir nutrientes adequados para as plantas. Certifique-se de que o solo seja leve e bem drenado.</p>
+
+                <p><strong>Passo 4: Escolha das Plantas</strong><br>
+                Opte por plantas que se adaptem ao espaço disponível e à quantidade de luz solar que recebem. Ervas como manjericão, salsa, cebolinha e tomilho são ideais para hortas compactas, assim como alfaces, rúcula, e até tomates cereja em vasos maiores.</p>
+
+                <p><strong>Passo 5: Plantio</strong><br>
+                Plante as mudas ou sementes conforme as instruções de cada planta. Mantenha uma distância adequada entre elas para permitir o crescimento saudável.</p>
+
+                <p><strong>Passo 6: Cuidados Diários</strong><br>
+                Regue regularmente, de preferência de manhã cedo ou no final da tarde para evitar que o sol forte evapore a água muito rapidamente. Fique atento à necessidade específica de cada planta quanto à água.</p>
+
+                <p><strong>Passo 7: Fertilização</strong><br>
+                Aplique fertilizante orgânico conforme necessário para garantir que as plantas recebam nutrientes suficientes para um crescimento saudável.</p>
+
+                <p><strong>Passo 8: Controle de Pragas e Doenças</strong><br>
+                Monitore suas plantas regularmente em busca de sinais de pragas ou doenças. Se necessário, aplique métodos de controle orgânicos para protegê-las.</p>
+
+                <p><strong>Passo 9: Colheita</strong><br>
+                Quando as plantas estiverem maduras, comece a colher. A maioria das ervas pode ser colhida à medida que você precisa, enquanto vegetais como alfaces e tomates cereja serão colhidos conforme amadurecem.</p>
+
+                <p><strong>Passo 10: Manutenção Contínua</strong><br>
+                Continue cuidando da sua horta compacta, removendo folhas mortas, controlando o crescimento das plantas e replantando conforme necessário para manter o espaço produtivo.</p>
+            `;
+        }
+    </script>
+</body>
+</html>
